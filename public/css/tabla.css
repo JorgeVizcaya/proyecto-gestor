@@ -1,0 +1,66 @@
+/* Contenedor responsivo */
+.contenido-tabla {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 2em;
+}
+
+/* Estilo de la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: sans-serif;
+    background-color: #fff;
+    box-shadow: 0 .2em .8em rgba(0,0,0,0.1);
+    font-size: 1.3em;
+}
+
+/* Encabezados */
+th {
+    background-color: #4a5568;
+    color: white;
+    text-align: left;
+    padding: 1.5em;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* Celdas */
+td {
+    padding: 1.2em 1.5em;
+    border-bottom: .1em solid #edf2f7;
+    vertical-align: middle;
+}
+
+/* Filas cebra */
+tbody tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+/* Estados (Completada/Pendiente) */
+.Completada {
+    color: #2f855a;
+    font-weight: bold;
+    text-decoration: line-through;
+}
+
+.Pendiente {
+    color: #c53030;
+    font-weight: bold;
+}
+
+/* Estilo para el mensaje de tabla vacía */
+td[colspan="5"] {
+    text-align: center;
+    padding: 3em;
+    color: #718096;
+    font-style: italic;
+}
+.botones_de_mi_tabla{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 1em;
+}

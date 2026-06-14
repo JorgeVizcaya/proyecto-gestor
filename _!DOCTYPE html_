@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<HTML>
+<head>
+		<title>Calcular Área</title>
+
+</head>
+<body>
+
+<h2> Calcular area de una figura</h2>
+<from method="post">
+	<label> Seleccione la figura: </label>
+	<select name="figura">
+	<option value="triangulo"> Triangualo
+	<option value=" cuadrado"> Cuadrado</
+	<option value="circulo">Circulo</op
+</select><br><br>
+
+
+

@@ -1,0 +1,117 @@
+<style>
+        body {
+            font-family: Arial;
+            margin: 40px;
+        }
+
+        .ficha {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #ccc;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        .completada {
+            text-decoration: line-through;
+            color: gray;
+        }
+
+        .btn {
+            padding: 5px 10px;
+            text-decoration: none;
+            width: 80px;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+            margin: 2px 5px;
+
+        }
+
+        .btn-editar {
+            background: #3490dc;
+            color: white;
+        }
+
+        .btn-eliminar {
+            background: #e3342f;
+            color: white;
+        }
+
+        .btn-completar {
+            background: #38c172;
+            color: white;
+        }
+
+        /* ESTILOS PARA PESTAÑAS */
+
+        /* Ocultar los inputs reales */
+        .tabs input[type="radio"] {
+            display: none;
+        }
+
+        /* Estilo de las pestañas (labels) */
+        .tabs label {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #eee;
+            cursor: pointer;
+            border: 1px solid #ccc;
+            border-bottom: none;
+        }
+
+        /* Estilo del contenido */
+        .tab {
+            display: none;
+            padding: 20px;
+            border: 1px solid #ccc;
+            background: white;
+
+        }
+
+        /* Mostrar contenido al seleccionar radio */
+        #tab1:checked~#content1,
+        #tab2:checked~#content2 {
+            display: block;
+        }
+
+        /* Estilo pestaña activa */
+        #tab1:checked~label[for="tab1"],
+        #tab2:checked~label[for="tab2"] {
+            background: white;
+            font-weight: bold;
+        }
+
+        /* Estilo para el botón dentro del contenido */
+        .boton-ir {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 15px;
+            background-color: #007bff;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.9em;
+            transition: background 0.2s;
+        }
+
+        .boton-ir:hover {
+            background-color: #0056b3;
+        }
+    </style>
