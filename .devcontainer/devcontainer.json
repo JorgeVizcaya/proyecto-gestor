@@ -13,5 +13,5 @@
       ]
     }
   },
-  "postCreateCommand": "composer create-project laravel/laravel:^12.0 . --force && php artisan serve --host=0.0.0.0"
+ // "postCreateCommand": "composer create-project larave //
 }
